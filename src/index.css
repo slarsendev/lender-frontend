@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .purchase-button {
+    @apply inline-flex w-full justify-center rounded-md bg-blue-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 sm:w-auto disabled:hover:bg-gray-300 disabled:bg-gray-300 disabled:text-white disabled:cursor-not-allowed;
+  }
+
+  .header-button{
+    @apply inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mr-2;
+  }
+
+  .form-input {
+    @apply block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus-visible:ring-1 focus:ring-inset focus-visible:ring-indigo-600 focus:ring-indigo-600 sm:text-sm sm:leading-6;
+  }
+  .form-file-input{
+    @apply focus:text-neutral-700 focus:outline-none mt-2.5 relative m-0 block w-full min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-clip-padding px-3 py-[0.32rem] text-base font-normal text-neutral-700 file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem];
+  }
+  .card-wrapper{
+    @apply max-w-lg w-72 h-96 rounded-lg overflow-hidden shadow-lg m-4 p-2 border border-gray-200 transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer pb-2;
+  }
+}
